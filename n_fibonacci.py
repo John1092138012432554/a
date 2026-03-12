@@ -11,9 +11,11 @@ def n_fibonacci():
     n3 = 1
     pal = int(input("Enter a non-negative whole number on the line below:\n"))
     for i in range(2,pal):
-        n1 = n2 + n3
-        n2 = n3 + n1
         print(f"{n1}", end=" ")
+        n3 = n2 + n1
+        n1 = n2
+        n2 = n3
+
 # You should not need to change any code below this point
 def main():
     print("This program displays the standard Fibonacci sequence that is n elements long.")
